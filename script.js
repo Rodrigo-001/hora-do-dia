@@ -15,24 +15,23 @@ function carregar() {
     minutos = minutos < 10 ? "0" + minutos : minutos; 
 
     // Pegando cor de fundo
-    let fundo = document.querySelector("body");
-    
+    let fundo = document.querySelector("body");    
     
     // Verificando se é dia, manhã, tarde ou noite
     if(hora_atual > 4 && hora_atual < 12){
         cumprimento.innerHTML = "Bom dia!";
-        imagem.src = 'img/manha.jpg';        
+        imagem.src = 'img/manha.png';        
         fundo.classList.add("fundoDia"); //estilo definido no css
         
 
     }else if(hora_atual > 11  && hora_atual < 18){
         cumprimento.innerHTML = "Boa Tarde!";
-        imagem.src = 'img/tarde.jpg';     
+        imagem.src = 'img/tarde.png';     
         fundo.classList.add("fundoTarde"); //estilo definido no css
          
     }else{
         cumprimento.innerHTML = "Boa noite!";
-        imagem.src = 'img/noite.jpg';
+        imagem.src = 'img/noite.png';
         fundo.classList.add("fundoNoite")
     }
     secao_imagem.appendChild(imagem); 
