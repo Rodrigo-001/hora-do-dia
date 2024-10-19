@@ -1,0 +1,71 @@
+body {
+    font: normal 15pt Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cores para diferentes momentos do dia */
+.fundoDia {
+    background: #f9d487;
+}
+
+.fundoTarde {
+    background: #cca526;
+}
+
+.fundoNoite {
+    background: #0c335b;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 90%; /* Ajuste de largura para telas menores */
+    max-width: 500px; /* Limita o tamanho máximo em telas maiores */
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+}
+
+img {
+    width: 100%; /* Tornar imagem responsiva */
+    max-width: 200px; /* Limita o tamanho da imagem em telas maiores */
+}
+
+div {
+    text-align: center;
+    padding: 8px;
+}
+
+/* Media query para smartphones */
+@media (max-width: 600px) {
+    body {
+        font-size: 14pt; /* Ajusta a fonte para telas menores */
+    }
+
+    header h1 {
+        font-size: 18pt; /* Ajusta o tamanho do título no cabeçalho */
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 12pt; /* Reduz o tamanho da fonte no rodapé */
+    }
+}
